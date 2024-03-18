@@ -2,6 +2,7 @@
 
 header('Content-Type: application/json');
 
+date_default_timezone_set('Europe/Kiev');
 $date = isset($_REQUEST['date']) ? $_REQUEST['date'] : date('Y-m-d');
 
 $timestamp = strtotime($date);
